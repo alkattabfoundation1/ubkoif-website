@@ -377,9 +377,15 @@ We're sorry. Your registration could not be submitted at this time. Please try a
 </div>
 </div>
 
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1"><span data-i18n="form_state_label">State</span> <span class="text-red-500"></span></label>
 <input type="text" name="state" required data-i18n-placeholder="form_state_placeholder" placeholder="E.g., Kebbi" class="w-full px-3 py-2.5 bg-white border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-purple-950">
+</div>
+<div>
+<label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wide mb-1"><span data-i18n="form_email_label">Email Address</span> <span class="text-red-500"></span></label>
+<input type="email" name="email" required placeholder="name@domain.com" class="w-full px-3 py-2.5 bg-white border border-slate-300 rounded-lg text-xs focus:outline-none focus:border-purple-950">
+</div>
 </div>
 
 <div>
@@ -401,6 +407,7 @@ We're sorry. Your registration could not be submitted at this time. Please try a
 </div>
 </div>
 </section>
+
 
 <!-- GEOLOCATIONAL CONTACT SECTION -->
 <section id="contact" class="py-16 bg-slate-50 border-t border-slate-200">
@@ -803,4 +810,3 @@ registrationForm.classList.remove('hidden');
 </script>
 </body>
 </html>
-
