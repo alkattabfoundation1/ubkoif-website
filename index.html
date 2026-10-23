@@ -19,6 +19,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   .font-arabic { font-family: 'Amiri', serif; }
+  @keyframes ubkoif-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .pulse-dot { animation: ubkoif-pulse 1.6s ease-in-out infinite; }
 </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-purple-900 selection:text-white">
@@ -48,6 +50,7 @@ UBKOIF
 </div>
 <ul class="hidden lg:flex items-center gap-6 font-semibold text-xs uppercase tracking-wider">
 <li><a href="#" data-i18n="nav_home" class="hover:text-purple-900 transition-colors">Home</a></li>
+<li><a href="#ongoing-programs" data-i18n="nav_work" class="hover:text-purple-900 transition-colors">Our Work</a></li>
 <li><a href="#about" data-i18n="nav_about" class="hover:text-purple-900 transition-colors">About Us</a></li>
 <li><a href="#programs" data-i18n="nav_programs" class="hover:text-purple-900 transition-colors">Programs</a></li>
 <li><a href="#causes" data-i18n="nav_causes" class="hover:text-purple-900 transition-colors">Causes</a></li>
@@ -118,6 +121,91 @@ Orphanage & Islamic Foundation
 <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto" data-i18n="welcome_text">
 We serve as an active vehicle for communal transformation, bridging targeted modern humanitarian execution with eternal Shari'ah principles.
 </p>
+</div>
+</section>
+
+<!-- ONGOING PROGRAMS (LIVE) -->
+<section id="ongoing-programs" class="py-20 bg-purple-950 text-white relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-purple-950 via-purple-900/95 to-purple-950 z-0"></div>
+<div class="relative z-10 max-w-6xl mx-auto px-6">
+<div class="text-center mb-10">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-4">
+<span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-amber-300" data-i18n="ongoing_label">Ongoing Now</span>
+</div>
+<h2 class="font-serif font-bold text-3xl md:text-4xl text-white mb-3" data-i18n="ongoing_heading">Our Ongoing Programs</h2>
+<p class="text-purple-200 text-sm md:text-base max-w-2xl mx-auto" data-i18n="ongoing_sub">Here's what we're actively working on right now — and where your support is needed most.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<!-- PROGRAM CARD 1: SCHOLARSHIP -->
+<div class="bg-purple-900/60 border border-white/10 rounded-2xl p-6 md:p-7">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+<span class="text-[11px] font-bold uppercase tracking-widest text-amber-300" data-i18n="ongoing_label">Ongoing Now</span>
+</div>
+<h3 class="font-serif font-bold text-xl text-white mb-2" data-i18n="program1_title">Islamic & School Scholarship</h3>
+<p class="text-purple-200 text-sm leading-relaxed mb-4" data-i18n="program1_text">We are raising support to sponsor orphans who cannot afford their Islamic and school education.</p>
+<div class="inline-flex items-center gap-2 bg-amber-400/15 rounded-lg px-3 py-1.5 mb-2">
+<i data-lucide="target" class="text-amber-300 w-4 h-4"></i>
+<span class="text-xs font-bold text-amber-300" data-i18n="program1_goal">Goal: sponsor 20 orphans</span>
+</div>
+<p class="text-purple-200 text-xs mb-4" data-i18n="program1_goal_sub">Your support helps us reach this goal.</p>
+<div class="flex items-center justify-between">
+<span class="text-[11px] text-purple-300" data-i18n="program1_updated">Updated October 2026</span>
+<a href="#donate" class="bg-amber-400 hover:bg-amber-300 text-purple-950 text-xs font-bold px-4 py-2 rounded-lg" data-i18n="support_program_btn">Support This Program</a>
+</div>
+</div>
+
+<!-- PROGRAM CARD 2: WATER PUMP -->
+<div class="bg-purple-900/60 border border-white/10 rounded-2xl p-6 md:p-7">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+<span class="text-[11px] font-bold uppercase tracking-widest text-amber-300" data-i18n="ongoing_label">Ongoing Now</span>
+</div>
+<h3 class="font-serif font-bold text-xl text-white mb-2" data-i18n="program2_title">Mosque Water Pump Repair</h3>
+<p class="text-purple-200 text-sm leading-relaxed mb-4" data-i18n="program2_text">Restoring ablution water access at a community mosque in Badariya.</p>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="text-[11px] text-purple-300" data-i18n="program2_updated">Updated October 2026</span>
+<a href="#donate" class="bg-amber-400 hover:bg-amber-300 text-purple-950 text-xs font-bold px-4 py-2 rounded-lg" data-i18n="support_program_btn">Support This Program</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WORK WE HAVE DONE (GALLERY) -->
+<section id="completed-work" class="py-16 bg-white border-b border-slate-100">
+<div class="max-w-6xl mx-auto px-6">
+<div class="text-center mb-10">
+<h2 class="font-serif font-bold text-2xl md:text-3xl text-slate-900 mb-2" data-i18n="work_heading">Work We Have Done</h2>
+<p class="text-slate-500 text-sm" data-i18n="work_sub">A running record of completed work, Alhamdulillah.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+<div class="h-24 bg-slate-100 flex items-center justify-center">
+<i data-lucide="image" class="text-slate-400 w-6 h-6"></i>
+</div>
+<p class="text-[11px] text-slate-600 p-2" data-i18n="work1_caption">Ramadan feeding, 2025</p>
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+<div class="h-24 bg-slate-100 flex items-center justify-center">
+<i data-lucide="image" class="text-slate-400 w-6 h-6"></i>
+</div>
+<p class="text-[11px] text-slate-600 p-2" data-i18n="work2_caption">Kettles donated, mosque</p>
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+<div class="h-24 bg-slate-100 flex items-center justify-center">
+<i data-lucide="image" class="text-slate-400 w-6 h-6"></i>
+</div>
+<p class="text-[11px] text-slate-600 p-2" data-i18n="work3_caption">Battery water refill, solar</p>
+</div>
+<div class="bg-slate-50 border border-dashed border-slate-300 rounded-xl flex items-center justify-center min-h-[104px] p-2">
+<p class="text-[11px] text-slate-400 text-center" data-i18n="work_more">More added as work is done</p>
+</div>
+</div>
 </div>
 </section>
 
@@ -459,6 +547,7 @@ let currentLang = 'en';
 const translations = {
   ha: {
     nav_home: "Gida",
+    nav_work: "Ayyukanmu Masu Gudana",
     nav_about: "Game da Mu",
     nav_programs: "Ayyukanmu",
     nav_causes: "Dalilan Tallafi",
@@ -475,6 +564,26 @@ const translations = {
 
     welcome_heading: "Barka da Zuwa UBKOIF",
     welcome_text: "Muna aiki ne a matsayin hanyar canjin al'umma, wanda ke haɗa aikin agaji na zamani da ka'idojin Shari'ar Musulunci na dawwama.",
+
+    ongoing_label: "Ana Gudanarwa Yanzu",
+    ongoing_heading: "Ayyukanmu Masu Gudana",
+    ongoing_sub: "Ga abin da muke aiki a kai a yanzu — kuma inda ake bukatar tallafinku sosai.",
+    program1_title: "Tallafin Karatu na Addini da Makaranta",
+    program1_text: "Muna neman tallafi domin ɗaukar nauyin ilimin addini da na makaranta ga marayu waɗanda ba su iya biyan kuɗin karatu da kansu ba.",
+    program1_goal: "Buri: Ɗaukar Nauyin Marayu 20",
+    program1_goal_sub: "Tallafinku yana taimaka mana cimma wannan buri.",
+    program1_updated: "An sabunta a Oktoba 2026",
+    program2_title: "Gyaran Famfon Ruwa na Masallaci",
+    program2_text: "Dawo da samar da ruwan alwala a masallacin al'umma da ke Badariya.",
+    program2_updated: "An sabunta a Oktoba 2026",
+    support_program_btn: "Tallafa wa Wannan Shirin",
+
+    work_heading: "Ayyukan da Muka Riga Muka Yi",
+    work_sub: "Rubutun ci gaba na ayyukan da aka kammala, Alhamdulillah.",
+    work1_caption: "Ciyar da Ramadan, 2025",
+    work2_caption: "Bayar da Kettur, Masallaci",
+    work3_caption: "Cika Ruwan Baturi, Hasken Rana",
+    work_more: "Za a ƙara yayin da aka yi aiki",
 
     founder_label: "Saƙo Daga Wanda Ya Kafa Gidauniyar",
     founder_body: `"An kafa UBKOIF ne da niyya ɗaya kawai — neman yardar Allah ta hanyar kula da marayu da kuma ƙarfafa Musulunci ta hanyar tausayi, ilimi, da hidimar al'umma. Ba kowa ne zai iya zama Limami ko malami ba, amma kowane Musulmi zai iya shiga wannan babban aiki ta hanyar alheri, sadaka, da tallafi na gaskiya.
@@ -575,20 +684,10 @@ const translations = {
     form_state_label: "Jiha",
     form_state_placeholder: "Misali: Kebbi",
     form_email_label: "Adireshin Imel",
-    form_occupation_label: "Sana'a",
-    form_occupation_placeholder: "Sana'arku",
-    form_support_label: "Yaya Kuke So Ku Tallafa Wa UBKOIF?",
-    optional_label: "(Ba Tilas Ba)",
-    select_all_label: "(Zaɓi duk abin da ya dace)",
-    support1: "Ɗaukar Nauyin Maraya",
-    support2: "Sadaka Kowane Wata",
-    support3: "Ciyar da Ramadan",
-    support4: "Zakka",
-    support5: "Sadaka",
-    support6: "Aikin Sa Kai",
-    support7: "Ayyukan Musulunci",
     form_message_label: "Saƙo",
     form_message_placeholder: "Faɗa mana yadda kuke son tallafa wa UBKOIF ko yi wata tambaya.",
+    optional_label: "(Ba Tilas Ba)",
+    select_all_label: "(Zaɓi duk abin da ya dace)",
     form_declaration: "Na tabbatar cewa bayanan da na bayar gaskiya ne.",
     form_submit_btn: "Zama Memba na UBKOIF",
     form_processing_text: "Ana Aiwatar da Rijista...",
@@ -607,7 +706,7 @@ const translations = {
     join_as_required: "Da fatan za ku zaɓi aƙalla ɗaya daga cikin zaɓuɓɓukan 'Ina So In Shiga A Matsayin'."
   },
   en: {
-    nav_home: "Home", nav_about: "About Us", nav_programs: "Programs", nav_causes: "Causes",
+    nav_home: "Home", nav_work: "Our Work", nav_about: "About Us", nav_programs: "Programs", nav_causes: "Causes",
     nav_membership: "Membership", nav_donate: "Donate", nav_donate_btn: "Donate Now",
     ayah_translation: `"And they ask you concerning orphans. Say: 'Improvement for them is best.'" (Surah Al-Baqarah 2:220)`,
     hero_subtitle: "Orphanage & Islamic Foundation",
@@ -615,6 +714,27 @@ const translations = {
     hero_donate: "Donate Now", hero_whatsapp: "Join WhatsApp Group", hero_call: "Call / WhatsApp",
     welcome_heading: "Welcome to UBKOIF",
     welcome_text: "We serve as an active vehicle for communal transformation, bridging targeted modern humanitarian execution with eternal Shari'ah principles.",
+
+    ongoing_label: "Ongoing Now",
+    ongoing_heading: "Our Ongoing Programs",
+    ongoing_sub: "Here's what we're actively working on right now — and where your support is needed most.",
+    program1_title: "Islamic & School Scholarship",
+    program1_text: "We are raising support to sponsor orphans who cannot afford their Islamic and school education.",
+    program1_goal: "Goal: sponsor 20 orphans",
+    program1_goal_sub: "Your support helps us reach this goal.",
+    program1_updated: "Updated October 2026",
+    program2_title: "Mosque Water Pump Repair",
+    program2_text: "Restoring ablution water access at a community mosque in Badariya.",
+    program2_updated: "Updated October 2026",
+    support_program_btn: "Support This Program",
+
+    work_heading: "Work We Have Done",
+    work_sub: "A running record of completed work, Alhamdulillah.",
+    work1_caption: "Ramadan feeding, 2025",
+    work2_caption: "Kettles donated, mosque",
+    work3_caption: "Battery water refill, solar",
+    work_more: "More added as work is done",
+
     founder_label: "A Message from the Founder",
     founder_body: `"UBKOIF was established with one sincere intention — to seek the pleasure of Allah by caring for orphans and strengthening Islam through compassion, education, and community service. Not everyone can become an Imam or a scholar, but every Muslim can participate in this noble mission through kindness, charity, and sincere support.
     <br><br>
@@ -684,12 +804,9 @@ const translations = {
     form_fullname_label: "Full Name", form_fullname_placeholder: "E.g., Ahmad Ibrahim",
     form_phone_label: "Phone Number / WhatsApp",
     form_state_label: "State", form_state_placeholder: "E.g., Kebbi",
-    form_email_label: "Email Address", form_occupation_label: "Occupation", form_occupation_placeholder: "Your Profession",
-    form_support_label: "How Would You Like to Support UBKOIF?",
-    optional_label: "(Optional)", select_all_label: "(Select all that apply)",
-    support1: "Sponsor an Orphan", support2: "Monthly Donation", support3: "Ramadan Feeding",
-    support4: "Zakat", support5: "Sadaqah", support6: "Volunteer Service", support7: "Islamic Projects",
+    form_email_label: "Email Address",
     form_message_label: "Message", form_message_placeholder: "Tell us how you would like to support UBKOIF or ask any question.",
+    optional_label: "(Optional)", select_all_label: "(Select all that apply)",
     form_declaration: "I confirm that the information I have provided is correct.",
     form_submit_btn: "Become a UBKOIF Member",
     form_processing_text: "Processing Registration...",
